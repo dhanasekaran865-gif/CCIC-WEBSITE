@@ -1,0 +1,1061 @@
+/* CCIC Club Website Custom CSS */
+:root {
+  --sairam-blue: #003366;
+  --sairam-dark-blue: #002244;
+  --sairam-light-blue: #006699;
+  --sairam-accent: #033a87;
+  --sairam-gold: #c89d3c;
+  --text-dark: #222222;
+  --text-muted: #555555;
+  --bg-light: #f8f9fa;
+  --border-color: #e2e8f0;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--sairam-blue);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--sairam-light-blue);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--sairam-dark-blue);
+  text-decoration: none;
+}
+
+/* Top Meta Navigation Bar */
+#meta-nav {
+  background-color: #f4f6f8;
+  border-bottom: 1px solid #e2e6ea;
+  padding: 6px 0;
+  font-size: 12px;
+}
+
+#meta-nav ul#meta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#meta-nav ul#meta li a {
+  color: #555;
+  font-weight: 600;
+}
+
+#meta-nav ul#meta li a:hover {
+  color: var(--sairam-blue);
+}
+
+/* Site Header */
+header#header {
+  background-color: #ffffff;
+  background-image: url('../images/header-bkg-blue.png');
+  background-repeat: repeat-x;
+  background-position: 100% center;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+#logo-search {
+  padding: 12px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.brand-ccic-logo {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.brand-wrapper:hover .brand-ccic-logo {
+  transform: scale(1.05);
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--sairam-blue);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: #444;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.brand-dept-tag {
+  font-size: 11px;
+  color: #026670;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 2px;
+}
+
+.brand-sairam-logo {
+  height: 55px;
+  object-fit: contain;
+  margin-left: 20px;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+
+.header-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-search-form input[type="search"] {
+  height: 38px;
+  padding: 6px 14px 6px 36px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.3s;
+  width: 220px;
+}
+
+.header-search-form input[type="search"]:focus {
+  border-color: var(--sairam-blue);
+  box-shadow: 0 0 8px rgba(0, 51, 102, 0.25);
+  width: 250px;
+}
+
+.header-search-form .search-icon {
+  position: absolute;
+  left: 12px;
+  color: #888;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Main Navigation */
+#main-nav {
+  background: linear-gradient(180deg, #003366 0%, #002244 100%);
+  border-top: 2px solid var(--sairam-accent);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav li a {
+  display: block;
+  padding: 13px 18px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: all 0.25s ease;
+  border-bottom: 3px solid transparent;
+}
+
+#nav li a:hover,
+#nav li.active a {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-bottom-color: #f7b731;
+}
+
+/* Mobile Nav */
+#mobile-menu-btn {
+  display: none;
+  background: var(--sairam-blue);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mobile-nav-drawer {
+  display: none;
+  background: #002244;
+  padding: 10px 0;
+}
+
+.mobile-nav-drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-drawer ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-nav-drawer ul li a:hover,
+.mobile-nav-drawer ul li.active a {
+  background: rgba(255, 255, 255, 0.15);
+  color: #f7b731;
+}
+
+/* Breadcrumbs */
+#breadcrumbs {
+  padding: 14px 0;
+  font-size: 13px;
+  color: #777;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 25px;
+}
+
+#breadcrumbs a {
+  color: var(--sairam-blue);
+  font-weight: 600;
+}
+
+#breadcrumbs .breadcrumb_last {
+  font-weight: 700;
+  color: #333;
+}
+
+/* Hero Section */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+}
+
+.hero-slide {
+  height: 460px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay-card {
+  background: rgba(0, 34, 68, 0.88);
+  backdrop-filter: blur(4px);
+  padding: 35px 40px;
+  border-radius: 6px;
+  color: #ffffff;
+  max-width: 600px;
+  border-left: 6px solid #f7b731;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  margin-left: 40px;
+}
+
+.hero-overlay-card h1 {
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.hero-overlay-card h2 {
+  font-size: 19px;
+  color: #f7b731;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.hero-overlay-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* Section Header & Separator */
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.section-title-wrap h1,
+.section-title-wrap h2 {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--sairam-blue);
+  margin-bottom: 6px;
+}
+
+.section-title-wrap .subtitle {
+  font-size: 15px;
+  color: #555;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.vc_separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 25px auto;
+  width: 100%;
+}
+
+.vc_separator .vc_sep_line {
+  height: 2px;
+  background: #003366;
+  width: 80px;
+}
+
+.vc_separator .vc_sep_dot {
+  width: 8px;
+  height: 8px;
+  background: #f7b731;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+/* Institutional Content */
+.institution-content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.institution-content p {
+  margin-bottom: 18px;
+}
+
+.institution-content b,
+.institution-content strong {
+  color: var(--sairam-blue);
+}
+
+/* ==========================================================================
+   ORGANIZED MEMBER CARD ARCHITECTURE (EQUAL HEIGHT & CLEAN STYLING)
+   ========================================================================== */
+.member-card-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 24px 18px 20px 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 34, 68, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.member-card-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 51, 102, 0.12);
+  border-color: #cbd5e1;
+}
+
+/* Enforce strict vertical stacking for all content inside the card */
+.member-card-box .card-top,
+.member-card-box > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.member-photo-frame {
+  position: relative;
+  margin: 0 auto 16px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.member-photo-frame.circular img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 34, 68, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.member-photo-frame.rect img {
+  width: 200px;
+  height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 34, 68, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.member-card-box:hover .member-photo-frame img {
+  transform: scale(1.03);
+}
+
+.badge-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+/* Role Badges */
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 0 auto 8px auto;
+  line-height: 1.2;
+}
+
+.role-badge.strategist { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+.role-badge.captain { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.role-badge.organizer { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.role-badge.propagator { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+.role-badge.executor { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
+.role-badge.coordinator { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+.role-badge.senior { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+.role-badge.junior { background: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
+.role-badge.executive { background: #003366; color: #ffffff; }
+
+.member-card-box h3.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin: 6px 0 4px 0;
+  line-height: 1.3;
+}
+
+.member-card-box h4.role-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sairam-accent);
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-card-box p.affiliation {
+  font-size: 12px;
+  color: #666;
+  margin: 12px 0 0 0;
+  line-height: 1.5;
+  width: 100%;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 10px;
+}
+
+.member-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.member-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   COHORT FILTER TABS (FOR MAGIC MEMBERS)
+   ========================================================================== */
+.cohort-tabs-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 35px 0;
+  flex-wrap: wrap;
+}
+
+.cohort-tab-btn {
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+  outline: none;
+}
+
+.cohort-tab-btn:hover {
+  background: #e2e8f0;
+  color: var(--sairam-blue);
+}
+
+.cohort-tab-btn.active {
+  background: var(--sairam-blue);
+  color: #ffffff;
+  border-color: var(--sairam-blue);
+  box-shadow: 0 3px 10px rgba(0, 51, 102, 0.25);
+}
+
+.cohort-section-header {
+  background: #f1f5f9;
+  border-left: 5px solid var(--sairam-blue);
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin: 30px 0 22px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cohort-section-header h3 {
+  margin: 0;
+  font-size: 17px;
+  color: var(--sairam-blue);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.cohort-section-header .cohort-badge {
+  background: #003366;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Events Cards */
+.event-card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.event-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 51, 102, 0.14);
+  transform: translateY(-4px);
+  border-color: #cbd5e1;
+}
+
+.event-poster-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background-color: #002244;
+  cursor: pointer;
+}
+
+.event-poster-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-poster-wrap img {
+  transform: scale(1.04);
+}
+
+.event-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f7b731;
+  color: #002244;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.event-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--sairam-blue);
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+}
+
+.event-meta {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.event-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.event-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.event-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f0f2f5;
+  padding-top: 14px;
+}
+
+.btn-ccic {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: var(--sairam-accent);
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-ccic:hover {
+  background-color: var(--sairam-dark-blue);
+  box-shadow: 0 4px 10px rgba(3, 58, 135, 0.3);
+}
+
+.btn-ccic-outline {
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: transparent;
+  color: var(--sairam-accent) !important;
+  border: 1px solid var(--sairam-accent);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-ccic-outline:hover {
+  background-color: var(--sairam-accent);
+  color: #ffffff !important;
+}
+
+/* About Highlights */
+.about-dept-highlight {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f7ff 100%);
+  border-left: 5px solid var(--sairam-accent);
+  padding: 22px 25px;
+  border-radius: 6px;
+  margin: 25px 0;
+  box-shadow: 0 3px 10px rgba(0, 51, 102, 0.05);
+}
+
+.about-dept-highlight h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: var(--sairam-blue);
+}
+
+.about-dept-highlight p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a446c;
+}
+
+.vm-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 28px 24px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  transition: transform 0.3s;
+}
+
+.vm-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 51, 102, 0.08);
+}
+
+.vm-box .vm-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #eef5fc;
+  color: var(--sairam-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.vm-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.vm-box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Contact Specifics */
+.contact-info-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.contact-info-item .icon {
+  font-size: 20px;
+  color: var(--sairam-accent);
+  margin-top: 3px;
+}
+
+.contact-info-item h4 {
+  font-size: 15px;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.contact-info-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 14px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: var(--sairam-blue);
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.15);
+  outline: none;
+}
+
+/* Footer */
+footer#colophon {
+  background-color: #ffffff;
+  background-image: url('../images/footer-bkg-white.png');
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  border-top: 1px solid #e5e7eb;
+  padding: 40px 0 25px 0;
+  margin-top: 60px;
+  color: #555555;
+}
+
+#menu-footer-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+
+#menu-footer-navigation li a {
+  color: #444444;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#menu-footer-navigation li a:hover {
+  color: var(--sairam-blue);
+  text-decoration: underline;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  color: #666666;
+  line-height: 1.8;
+}
+
+.footer-copyright-text strong {
+  color: #333333;
+}
+
+#social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: var(--sairam-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.25s;
+}
+
+#social-links a:hover {
+  background: var(--sairam-blue);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Back to top */
+#top-link-block {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+}
+
+#top-link-block a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sairam-blue);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#top-link-block a:hover {
+  background: var(--sairam-accent);
+  transform: translateY(-3px);
+}
+
+/* Modal */
+.modal-brochure .modal-dialog {
+  max-width: 850px;
+}
+
+.modal-brochure .modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-brochure .modal-body {
+  padding: 0;
+  background: #111;
+  text-align: center;
+}
+
+.modal-brochure .modal-body img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  #nav li a {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .brand-sairam-logo {
+    display: none;
+  }
+  .hero-slide {
+    height: 380px;
+  }
+  .hero-overlay-card {
+    margin-left: 20px;
+    padding: 25px;
+  }
+  .hero-overlay-card h1 {
+    font-size: 22px;
+  }
+  .hero-overlay-card h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #meta-nav {
+    display: none;
+  }
+  #main-nav #nav {
+    display: none;
+  }
+  #mobile-menu-btn {
+    display: inline-block;
+  }
+  .brand-title {
+    font-size: 18px;
+  }
+  .brand-subtitle {
+    font-size: 11px;
+  }
+  .brand-dept-tag {
+    font-size: 10px;
+  }
+  .brand-ccic-logo {
+    height: 55px;
+    width: 55px;
+  }
+  .hero-slide {
+    height: 320px;
+  }
+  .hero-overlay-card {
+    margin: 15px;
+    padding: 20px;
+  }
+  .hero-overlay-card h1 {
+    font-size: 18px;
+  }
+  .hero-overlay-card h2 {
+    font-size: 14px;
+  }
+  #social-links {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
