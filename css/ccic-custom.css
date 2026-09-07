@@ -493,6 +493,12 @@ header#header {
 .role-badge.senior { background: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
 .role-badge.junior { background: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
 .role-badge.executive { background: #003366; color: #ffffff; }
+.role-badge.mastermind { background: #fdf2f8; color: #9d174d; border: 1px solid #fbcfe8; }
+.role-badge.advocate { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.role-badge.guide { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+.role-badge.influencer { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+.role-badge.communicator { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+
 
 .member-card-box h3.name {
   font-size: 18px;
