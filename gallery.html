@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>GALLERY - Computational and Cognitive Intelligence Club (CCIC) | Sri Sairam Engineering College</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/ccic-logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap & FontAwesome Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Reference Site Base & Custom Styles -->
+    <link rel="stylesheet" href="css/ref-styles.css">
+    <link rel="stylesheet" href="css/ccic-custom.css">
+</head>
+<body>
+<div id="page" class="site">
+
+    <!-- Top Meta Nav -->
+    <div id="meta-nav" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul id="meta">
+                        <li><a href="https://sairam.edu.in/" target="_blank"><i class="fa fa-external-link"></i> sairam.edu.in</a></li>
+                        <li><a href="https://sairam.edu.in/department-of-artificial-intelligence-and-data-science/" target="_blank">Department of CSE (AI &amp; ML)</a></li>
+                        <li><a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="meta-social insta" title="Follow CCIC on Instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="meta-social linkedin" title="Connect with CCIC on LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Brand Section -->
+    <header id="header" class="site-header" role="banner">
+        <div class="container">
+            <div class="row" id="logo-search">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
+                    <a href="index.html" class="brand-wrapper" title="CCIC Club - Sri Sai Ram Engineering College">
+                        <img src="images/ccic-logo.png" alt="CCIC Logo" class="brand-ccic-logo">
+                        <div class="brand-text-block">
+                            <span class="brand-title">CCIC</span>
+                            <span class="brand-subtitle">Computational and Cognitive Intelligence Club</span>
+                            <span class="brand-dept-tag"><i class="fa fa-microchip"></i> Department of CSE (AI &amp; ML) &bull; Sri Sai Ram Engineering College</span>
+                        </div>
+                        <img src="images/sairam-logo.png" alt="Sri Sairam Engineering College" class="brand-sairam-logo hidden-sm hidden-xs">
+                    </a>
+                </div>
+                
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-4 text-right">
+                    <div class="header-right-wrap">
+                        <div class="header-social-bar">
+                            <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="social-icon-btn insta" title="Follow CCIC on Instagram" aria-label="CCIC Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon-btn linkedin" title="Connect with CCIC on LinkedIn" aria-label="CCIC LinkedIn">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="header-search-box hidden-xs hidden-sm">
+                            <form class="header-search-form" onsubmit="return false;">
+                                <i class="fa fa-search search-icon"></i>
+                                <input type="search" placeholder="Search..." aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation Bar (Desktop >= 992px) -->
+        <div id="main-nav" class="hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul id="nav">
+                            <li class=""><a href="index.html">HOME</a></li>
+                            <li class=""><a href="about.html">ABOUT</a></li>
+                            <li class=""><a href="scope-members.html">SCOPE MEMBERS</a></li>
+                            <li class=""><a href="magic-members.html">MAGIC MEMBERS</a></li>
+                            <li class=""><a href="events.html">ACTIVITIES & EVENTS</a></li>
+                            <li class=""><a href="achievements.html">ACHIEVEMENTS</a></li>
+                            <li class="active current-menu-item"><a href="gallery.html">GALLERY</a></li>
+                            <li class=""><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile & Tablet Menu Bar on the Left (< 992px) -->
+        <div id="mobile-menu-bar" class="visible-xs visible-sm">
+            <div class="container">
+                <div class="mobile-bar-inner">
+                    <button id="mobile-menu-btn" class="mobile-menu-btn-left" aria-label="Open Navigation Menu">
+                        <i class="fa fa-bars"></i>
+                        <span class="btn-text">MENU</span>
+                    </button>
+                    <span class="mobile-current-page-tag"><i class="fa fa-angle-right"></i> GALLERY</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left-Side Slide-out Navigation Drawer -->
+        <div id="left-drawer-backdrop" class="drawer-backdrop"></div>
+        <div id="left-nav-drawer" class="left-nav-drawer" role="dialog" aria-label="Mobile Navigation Menu">
+            <div class="drawer-header">
+                <div class="drawer-brand">
+                    <img src="images/ccic-logo.png" alt="CCIC Logo" class="drawer-logo">
+                    <div class="drawer-brand-text">
+                        <span class="drawer-title">CCIC</span>
+                        <span class="drawer-subtitle">Department of CSE (AI &amp; ML)</span>
+                    </div>
+                </div>
+                <button id="close-drawer-btn" class="close-drawer-btn" aria-label="Close menu">&times;</button>
+            </div>
+            <div class="drawer-search">
+                <form class="drawer-search-form" onsubmit="return false;">
+                    <i class="fa fa-search"></i>
+                    <input type="search" placeholder="Search CCIC..." aria-label="Search">
+                </form>
+            </div>
+            <nav class="drawer-nav">
+                <ul>
+                    <li class=""><a href="index.html"><i class="fa fa-home"></i> <span>HOME</span></a></li>
+                    <li class=""><a href="about.html"><i class="fa fa-info-circle"></i> <span>ABOUT</span></a></li>
+                    <li class=""><a href="scope-members.html"><i class="fa fa-users"></i> <span>SCOPE MEMBERS</span></a></li>
+                    <li class=""><a href="magic-members.html"><i class="fa fa-magic"></i> <span>MAGIC MEMBERS</span></a></li>
+                    <li class=""><a href="events.html"><i class="fa fa-calendar"></i> <span>ACTIVITIES & EVENTS</span></a></li>
+                    <li class=""><a href="achievements.html"><i class="fa fa-trophy"></i> <span>ACHIEVEMENTS</span></a></li>
+                    <li class="active current-menu-item"><a href="gallery.html"><i class="fa fa-camera"></i> <span>GALLERY</span></a></li>
+                    <li class=""><a href="contact.html"><i class="fa fa-envelope"></i> <span>CONTACT US</span></a></li>
+                </ul>
+            </nav>
+            <div class="drawer-footer">
+                <div class="drawer-social">
+                    <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="social-icon-btn insta" title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon-btn linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p class="drawer-affiliation">Sri Sairam Engineering College</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="breadcrumbs">
+                    <span>
+                        <a href="index.html"><i class="fa fa-home"></i> Home</a> &raquo; 
+                        <span class="breadcrumb_last">GALLERY</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Area -->
+    <div id="content" class="site-content">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title-wrap">
+                        <h1>PHOTO &amp; EVENT GALLERY</h1>
+                        <div class="subtitle">Capturing Moments of Learning, Innovation, Mentorship &amp; Collaboration</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vc_separator">
+                <span class="vc_sep_line"></span>
+                <span class="vc_sep_dot"></span>
+                <span class="vc_sep_line"></span>
+            </div>
+
+            <div class="row" style="margin-bottom: 25px;">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <p style="font-size: 15px; color: #555; line-height: 1.8;">
+                        Explore visual highlights from our flagship technical workshops, hands-on agentic hackathons, student research exhibits, and club ceremonies hosted at the <strong>Department of CSE (AI &amp; ML)</strong>, Sri Sai Ram Engineering College.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="gallery-filter-wrap">
+                        <div class="gallery-filter-bar">
+                            <button type="button" class="gallery-filter-btn active" data-filter="all">All Moments</button>
+                            <button type="button" class="gallery-filter-btn" data-filter="workshops">Workshops &amp; Bootcamps</button>
+                            <button type="button" class="gallery-filter-btn" data-filter="inauguration">Inauguration &amp; Keynotes</button>
+                            <button type="button" class="gallery-filter-btn" data-filter="exhibits">Tech Exhibits &amp; Stalls</button>
+                            <button type="button" class="gallery-filter-btn" data-filter="community">Campus &amp; Team</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Item 1: Generative AI Developer Bootcamp (Landscape) -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="workshops">
+                    <div class="gallery-card" data-description="Participants gathered for an intensive developer bootcamp exploring prompt engineering, LLM architectures, and agentic workflows.">
+                        <div class="gallery-img-container">
+                            <img src="images/events/bootcamp-landscape.jpg" alt="Generative AI Developer Bootcamp" onerror="this.onerror=null; this.src='images/sairam-campus.jpg';">
+                            <span class="gallery-badge">Workshop</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Workshops</span>
+                                <span class="date"><i class="fa fa-calendar-o"></i> 2026 Cohort</span>
+                            </div>
+                            <h3 class="gallery-card-title">Generative AI Developer Bootcamp</h3>
+                            <p class="gallery-card-desc">Intensive hands-on cohort mastering multimodal AI architectures and agent design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Official Club Inauguration Poster & Keynote -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="The grand launch ceremony of the Computational & Cognitive Intelligence Club (CCIC), establishing our research and innovation pillars.">
+                        <div class="gallery-img-container">
+                            <img src="images/events/inauguration-poster.jpg" alt="Official Club Inauguration Ceremony" onerror="this.onerror=null; this.src='images/sairam-campus.jpg';">
+                            <span class="gallery-badge">Inauguration</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Ceremonies</span>
+                                <span class="date"><i class="fa fa-calendar-o"></i> Inaugural Launch</span>
+                            </div>
+                            <h3 class="gallery-card-title">Official Club Inauguration &amp; Launch</h3>
+                            <p class="gallery-card-desc">The historic milestone inaugurating CCIC under the Department of CSE (AI &amp; ML).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Hands-on Lab Practice & Coding Workstation -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="workshops">
+                    <div class="gallery-card" data-description="Students engaged in collaborative machine learning experimentation, fine-tuning neural networks on high-performance laboratory clusters.">
+                        <div class="gallery-img-container">
+                            <img src="images/events/bootcamp-portrait.jpg" alt="Applied AI Hands-on Workshop" onerror="this.onerror=null; this.src='images/sairam-campus.jpg';">
+                            <span class="gallery-badge">Workstation</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Workshops</span>
+                                <span class="date"><i class="fa fa-calendar-o"></i> Lab Session</span>
+                            </div>
+                            <h3 class="gallery-card-title">Applied AI Workstations &amp; Labs</h3>
+                            <p class="gallery-card-desc">Practical laboratory environment empowering students to code real-time AI solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Industry Guest Lecture by Thirumurugan -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Distinguished industry guest address providing students with strategic perspectives on deploying scalable cognitive AI engines.">
+                        <div class="gallery-img-container">
+                            <img src="images/events/thirumurugan.jpg" alt="Industry Keynote Address" onerror="this.onerror=null; this.src='images/sairam-campus.jpg';">
+                            <span class="gallery-badge">Keynote</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Keynote</span>
+                                <span class="date"><i class="fa fa-calendar-o"></i> Special Address</span>
+                            </div>
+                            <h3 class="gallery-card-title">Enterprise Cognitive Systems Address</h3>
+                            <p class="gallery-card-desc">Valuable perspectives on the shift from instruction-following systems to cognitive agents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Sri Sai Ram Engineering College Campus -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="community">
+                    <div class="gallery-card" data-description="The scenic, sprawling academic center at Sri Sai Ram Engineering College, Sai Leo Nagar, home to CCIC and world-class engineering infrastructure.">
+                        <div class="gallery-img-container">
+                            <img src="images/sairam-campus.jpg" alt="Sri Sai Ram Engineering College Campus" onerror="this.onerror=null; this.src='images/sairam-campus.jpg';">
+                            <span class="gallery-badge">Campus</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Campus</span>
+                                <span class="date"><i class="fa fa-map-marker"></i> West Tambaram</span>
+                            </div>
+                            <h3 class="gallery-card-title">Sri Sairam Innovation Ecosystem</h3>
+                            <p class="gallery-card-desc">Our inspiring campus environment nurturing technical excellence and pioneering ideas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Three Switches, One Bulb Exhibit Stall -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="exhibits">
+                    <div class="gallery-card" data-description="Interactive cognitive puzzle stall demonstrating how multimodal sensory data (light + heat) enables deductive problem solving under strict constraints.">
+                        <div class="gallery-img-container" style="background: linear-gradient(135deg, #070b16 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: #00f0ff; padding: 20px;">
+                                <i class="fa fa-lightbulb-o" style="font-size: 55px; color: #f59e0b; text-shadow: 0 0 20px #f59e0b;"></i>
+                                <div style="font-weight: 800; font-size: 16px; margin-top: 8px; color: #ffffff; letter-spacing: 1px;">THREE SWITCHES, ONE BULB</div>
+                                <span style="font-size: 11px; color: #00f0ff; letter-spacing: 2px;">COGNITIVE INTELLIGENCE GAME</span>
+                            </div>
+                            <span class="gallery-badge">Exhibit Stall</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Tech Stall</span>
+                                <span class="date"><i class="fa fa-calendar-o"></i> CCIC Exhibit</span>
+                            </div>
+                            <h3 class="gallery-card-title">Interactive Cognitive Game Stall</h3>
+                            <p class="gallery-card-desc">Engaging browser exhibit for freshers testing scientific hypothesis formulation and thermal deduction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7: Core Student Leadership & Coordinators -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="community">
+                    <div class="gallery-card" data-description="The student council and technical leads of CCIC who organize hackathons, coordinate developer meetups, and mentor freshers across AI/ML domains.">
+                        <div class="gallery-img-container">
+                            <img src="images/members/magic/haripriyan.jpg" alt="Student Coordinators & MAGIC Team" onerror="this.onerror=null; this.src='images/members/avatar-placeholder.png';">
+                            <span class="gallery-badge">Leadership</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Team</span>
+                                <span class="date"><i class="fa fa-users"></i> MAGIC Council</span>
+                            </div>
+                            <h3 class="gallery-card-title">MAGIC Tech Leads &amp; Coordinators</h3>
+                            <p class="gallery-card-desc">Passionate student mentors orchestrating events and driving peer learning in cutting-edge AI.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8: Faculty Advisory & Department Mentorship -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="community">
+                    <div class="gallery-card" data-description="Guiding leadership from the Department of CSE (AI & ML), offering invaluable academic vision, laboratory resources, and institutional encouragement.">
+                        <div class="gallery-img-container">
+                            <img src="images/leadership/hod-priya.jpg" alt="Faculty Advisory & Mentorship" onerror="this.onerror=null; this.src='images/members/avatar-placeholder.png';">
+                            <span class="gallery-badge">Mentorship</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Mentorship</span>
+                                <span class="date"><i class="fa fa-graduation-cap"></i> Faculty Leads</span>
+                            </div>
+                            <h3 class="gallery-card-title">Department Guidance &amp; Advisors</h3>
+                            <p class="gallery-card-desc">Our dedicated professors and Club Advisors fostering student innovation and research publication.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9: Applied Model Demos & Hackathon Projects -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="exhibits">
+                    <div class="gallery-card" data-description="Student teams presenting real-time cognitive computer vision models, autonomous agent workflows, and natural language analytics.">
+                        <div class="gallery-img-container" style="background: linear-gradient(135deg, #002244 0%, #004080 100%); display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: #ffffff; padding: 20px;">
+                                <i class="fa fa-cubes" style="font-size: 55px; color: #f7b731;"></i>
+                                <div style="font-weight: 800; font-size: 16px; margin-top: 8px; letter-spacing: 1px;">PROJECT SHOWCASE</div>
+                                <span style="font-size: 11px; color: #38bdf8; letter-spacing: 2px;">AGENTIC &amp; COGNITIVE DEMOS</span>
+                            </div>
+                            <span class="gallery-badge">Demonstrations</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="category"><i class="fa fa-tag"></i> Projects</span>
+                                <span class="date"><i class="fa fa-laptop"></i> AI Demos</span>
+                            </div>
+                            <h3 class="gallery-card-title">Cognitive Computing Prototype Demos</h3>
+                            <p class="gallery-card-desc">Cutting-edge student engineering showcasing autonomous reasoning and deep learning solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Call-to-Action / Photo Contribution Box -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="gallery-contribute-box">
+                        <div class="gallery-contribute-text">
+                            <h3><i class="fa fa-camera-retro"></i> Captured Event Photos to Share?</h3>
+                            <p>
+                                Did you participate in our latest bootcamp, hackathon, or exhibition? Send your high-resolution event photographs to be featured in the official CCIC Gallery archives!
+                            </p>
+                        </div>
+                        <div class="gallery-contribute-action">
+                            <a href="contact.html" class="btn btn-warning" style="background: #f7b731; color: #002244; font-weight: 800; border: none; padding: 12px 24px; border-radius: 6px;">
+                                <i class="fa fa-envelope"></i> Contact Coordinators
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- #content -->
+
+    <!-- Lightbox Preview Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalTitle">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ffffff; opacity: 0.9;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="galleryModalTitle">Photo Preview</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="galleryModalImg" src="" alt="Event Highlight Preview">
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-desc-block">
+                        <span id="galleryModalBadge">Event</span>
+                        <p id="galleryModalDesc"></p>
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-left: 15px;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Footer -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul id="menu-footer-navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About CCIC</a></li>
+                        <li><a href="scope-members.html">Scope Members</a></li>
+                        <li><a href="magic-members.html">Magic Members</a></li>
+                        <li><a href="events.html">Activities &amp; Events</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="https://sairam.edu.in/" target="_blank">Sri Sairam Engineering College</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <div class="footer-copyright-text">
+                        <p><strong>&copy; Copyright 2026 Computational and Cognitive Intelligence Club (CCIC).</strong> All rights reserved.<br>
+                        Department of Computer Science and Engineering (Artificial Intelligence and Machine Learning),<br>
+                        <strong>Sri Sai Ram Engineering College</strong>, Sai Leo Nagar, West Tambaram, Chennai &ndash; 600 044, Tamil Nadu, India.<br>
+                        An Autonomous Institution &bull; Affiliated to Anna University, Chennai &bull; Approved by AICTE, New Delhi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 text-right">
+                    <div id="social-links">
+                        <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" title="CCIC LinkedIn Page" aria-label="CCIC LinkedIn" style="background: #0077b5; color: white;"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" title="CCIC Instagram Page" aria-label="CCIC Instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); color: white;"><i class="fa fa-instagram"></i></a>
+                        <a href="https://sairam.edu.in/" target="_blank" title="Sairam Engineering College Portal" aria-label="Portal"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="top-link-block" style="display: none;">
+        <a href="#top" title="Back to Top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+</div><!-- #page -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

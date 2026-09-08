@@ -63,6 +63,34 @@ $(document).ready(function() {
     }
   });
 
+  // Gallery category filter tabs
+  $('.gallery-filter-btn').on('click', function() {
+    $('.gallery-filter-btn').removeClass('active');
+    $(this).addClass('active');
+    var filter = $(this).data('filter');
+    
+    if (filter === 'all') {
+      $('.gallery-item-col').fadeIn(250);
+    } else {
+      $('.gallery-item-col').hide();
+      $('.gallery-item-col[data-category="' + filter + '"]').fadeIn(250);
+    }
+  });
+
+  // Gallery image preview modal click
+  $('.gallery-card').on('click', function(e) {
+    var imgSrc = $(this).find('img').attr('src');
+    var title = $(this).find('.gallery-card-title').text();
+    var badge = $(this).find('.gallery-badge').text();
+    var desc = $(this).attr('data-description') || '';
+    
+    $('#galleryModalImg').attr('src', imgSrc);
+    $('#galleryModalTitle').text(title);
+    $('#galleryModalBadge').text(badge);
+    $('#galleryModalDesc').text(desc);
+    $('#galleryModal').modal('show');
+  });
+
   // Interactive contact form submission simulation
   $('#ccicContactForm').on('submit', function(e) {
     e.preventDefault();

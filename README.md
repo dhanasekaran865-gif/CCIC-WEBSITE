@@ -38,6 +38,7 @@ ccic-website/
 ├── magic-members.html      # Magic Members (Coordinators -> 3rd Year -> 2nd Year)
 ├── events.html             # Activities & Events (Agent Automation Bootcamp, Inauguration)
 ├── achievements.html       # Achievements (Milestone timeline & student hackathon wins)
+├── gallery.html            # Photo & Event Gallery (Workshops, Hackathons, Stalls, Campus moments)
 ├── contact.html            # Contact Us (Campus details, Advisors, Form, Google Maps)
 ├── css/
 │   ├── bootstrap.min.css   # Responsive grid framework
