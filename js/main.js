@@ -1,55 +1,63 @@
 // CCIC Website Interactive Scripts
-$(document).ready(function() {
-  // Mobile Dropdown Navigation Menu Controls
-  function toggleMobileDropdown() {
-    var $menu = $('#mobile-dropdown-menu');
-    var $btn = $('#mobile-menu-btn');
-    var isVisible = $menu.is(':visible');
 
-    if (isVisible) {
-      $menu.stop(true, true).slideUp(220);
-      $btn.removeClass('open').attr('aria-expanded', 'false');
+function initCCICMobileMenu() {
+  const toggle = document.getElementById("mobile-menu-toggle");
+  const menu = document.getElementById("mobile-dropdown-menu");
+
+  if (!toggle || !menu) return;
+
+  const closeMenu = () => {
+    menu.hidden = true;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.classList.remove("is-open");
+  };
+
+  const openMenu = () => {
+    menu.hidden = false;
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.classList.add("is-open");
+  };
+
+  toggle.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (menu.hidden) {
+      openMenu();
     } else {
-      $menu.stop(true, true).slideDown(220);
-      $btn.addClass('open').attr('aria-expanded', 'true');
-    }
-  }
-
-  function closeMobileDropdown() {
-    var $menu = $('#mobile-dropdown-menu');
-    var $btn = $('#mobile-menu-btn');
-    if ($menu.is(':visible')) {
-      $menu.stop(true, true).slideUp(200);
-      $btn.removeClass('open').attr('aria-expanded', 'false');
-    }
-  }
-
-  $(document).on('click', '#mobile-menu-btn, .mobile-menu-btn-left', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleMobileDropdown();
-  });
-
-  // Close dropdown when clicking outside of mobile menu bar
-  $(document).on('click', function(e) {
-    if (!$(e.target).closest('#mobile-menu-bar').length) {
-      closeMobileDropdown();
+      closeMenu();
     }
   });
 
-  // Close dropdown on Escape key
-  $(document).on('keydown', function(e) {
-    if (e.key === 'Escape' || e.keyCode === 27) {
-      closeMobileDropdown();
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !menu.hidden &&
+      !menu.contains(event.target) &&
+      !toggle.contains(event.target)
+    ) {
+      closeMenu();
     }
   });
 
-  // Close dropdown when clicking any navigation link inside it
-  $(document).on('click', '#mobile-dropdown-menu .mobile-dropdown-nav a', function() {
-    closeMobileDropdown();
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+      toggle.focus();
+    }
   });
+}
 
-  // Smooth scroll to top
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initCCICMobileMenu);
+} else {
+  initCCICMobileMenu();
+}
+
+$(document).ready(function() {
   $('#top-link-block a').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 500);

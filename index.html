@@ -99,45 +99,41 @@
             </div>
         </div>
 
-        <!-- Mobile & Tablet Menu Bar (< 992px) -->
-        <div id="mobile-menu-bar" class="visible-xs visible-sm">
-            <div class="container">
+        <!-- Mobile & Tablet Navigation (< 992px) -->
+        <nav class="main-navigation visible-xs visible-sm" id="mobile-menu-bar" aria-label="Primary navigation">
+            <div class="container nav-container">
                 <div class="mobile-bar-inner">
-                    <button id="mobile-menu-btn" class="mobile-menu-btn-left" aria-expanded="false" aria-controls="mobile-dropdown-menu" aria-label="Toggle Navigation Menu">
-                        <i class="fa fa-bars mobile-hamburger-icon"></i>
-                        <span class="btn-text">MENU</span>
-                        <i class="fa fa-caret-down dropdown-arrow"></i>
+                    <button
+                        type="button"
+                        class="mobile-menu-toggle"
+                        id="mobile-menu-toggle"
+                        aria-expanded="false"
+                        aria-controls="mobile-dropdown-menu"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <span class="menu-icon" aria-hidden="true">☰</span>
+                        <span class="menu-label">MENU</span>
+                        <span class="menu-chevron" aria-hidden="true">▼</span>
                     </button>
-                    <span class="mobile-current-page-tag"><i class="fa fa-angle-right"></i> HOME</span>
+                    <span class="mobile-current-page-tag"><i class="fa fa-angle-right" aria-hidden="true"></i> HOME</span>
                 </div>
-                <!-- Collapsible Dropdown Navigation Menu -->
-                <div id="mobile-dropdown-menu" class="mobile-dropdown-collapse" style="display: none;">
-                    <div class="mobile-dropdown-search">
-                        <form class="mobile-search-form" onsubmit="return false;">
-                            <i class="fa fa-search"></i>
-                            <input type="search" placeholder="Search CCIC..." aria-label="Search">
-                        </form>
-                    </div>
-                    <ul class="mobile-dropdown-nav">
-                        <li class="active current-menu-item"><a href="index.html"><i class="fa fa-home"></i> <span>HOME</span></a></li>
-                        <li class=""><a href="about.html"><i class="fa fa-info-circle"></i> <span>ABOUT</span></a></li>
-                        <li class=""><a href="scope-members.html"><i class="fa fa-users"></i> <span>SCOPE MEMBERS</span></a></li>
-                        <li class=""><a href="magic-members.html"><i class="fa fa-magic"></i> <span>MAGIC MEMBERS</span></a></li>
-                        <li class=""><a href="events.html"><i class="fa fa-calendar"></i> <span>ACTIVITIES &amp; EVENTS</span></a></li>
-                        <li class=""><a href="achievements.html"><i class="fa fa-trophy"></i> <span>ACHIEVEMENTS</span></a></li>
-                        <li class=""><a href="gallery.html"><i class="fa fa-camera"></i> <span>GALLERY</span></a></li>
-                        <li class=""><a href="contact.html"><i class="fa fa-envelope"></i> <span>CONTACT US</span></a></li>
-                    </ul>
-                    <div class="mobile-dropdown-footer">
-                        <div class="mobile-dropdown-social">
-                            <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="social-icon-btn insta" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon-btn linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                        <p class="mobile-dropdown-affiliation">Department of CSE (AI &amp; ML) &bull; Sri Sairam Engineering College</p>
-                    </div>
+
+                <div
+                    class="mobile-dropdown-menu"
+                    id="mobile-dropdown-menu"
+                    hidden
+                >
+                    <a href="index.html" class="active">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="scope-members.html">SCOPE MEMBERS</a>
+                    <a href="magic-members.html">MAGIC MEMBERS</a>
+                    <a href="events.html">ACTIVITIES &amp; EVENTS</a>
+                    <a href="achievements.html">ACHIEVEMENTS</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="contact.html">CONTACT US</a>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     
