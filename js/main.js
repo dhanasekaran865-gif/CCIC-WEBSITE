@@ -1,8 +1,37 @@
 // CCIC Website Interactive Scripts
 $(document).ready(function() {
-  // Mobile drawer toggle
-  $('#mobile-menu-btn').on('click', function() {
-    $('.mobile-nav-drawer').slideToggle(200);
+  // Left-Side Navigation Drawer Controls
+  function openLeftDrawer() {
+    $('#left-nav-drawer').addClass('open');
+    $('#left-drawer-backdrop').addClass('open');
+    $('body').addClass('drawer-open');
+  }
+
+  function closeLeftDrawer() {
+    $('#left-nav-drawer').removeClass('open');
+    $('#left-drawer-backdrop').removeClass('open');
+    $('body').removeClass('drawer-open');
+  }
+
+  $(document).on('click', '#mobile-menu-btn, .mobile-menu-btn-left, .open-left-drawer', function(e) {
+    e.preventDefault();
+    openLeftDrawer();
+  });
+
+  $(document).on('click', '#close-drawer-btn, #left-drawer-backdrop', function(e) {
+    e.preventDefault();
+    closeLeftDrawer();
+  });
+
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      closeLeftDrawer();
+    }
+  });
+
+  // Close drawer when clicking any link inside it
+  $('#left-nav-drawer a').on('click', function() {
+    closeLeftDrawer();
   });
 
   // Smooth scroll to top
