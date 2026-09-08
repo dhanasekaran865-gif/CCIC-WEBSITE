@@ -98,56 +98,43 @@
             </div>
         </div>
 
-        <!-- Mobile & Tablet Menu Bar on the Left (< 992px) -->
+        <!-- Mobile & Tablet Menu Bar (< 992px) -->
         <div id="mobile-menu-bar" class="visible-xs visible-sm">
             <div class="container">
                 <div class="mobile-bar-inner">
-                    <button id="mobile-menu-btn" class="mobile-menu-btn-left" aria-label="Open Navigation Menu">
-                        <i class="fa fa-bars"></i>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn-left" aria-expanded="false" aria-controls="mobile-dropdown-menu" aria-label="Toggle Navigation Menu">
+                        <i class="fa fa-bars mobile-hamburger-icon"></i>
                         <span class="btn-text">MENU</span>
+                        <i class="fa fa-caret-down dropdown-arrow"></i>
                     </button>
                     <span class="mobile-current-page-tag"><i class="fa fa-angle-right"></i> GALLERY</span>
                 </div>
-            </div>
-        </div>
-
-        <!-- Left-Side Slide-out Navigation Drawer -->
-        <div id="left-drawer-backdrop" class="drawer-backdrop"></div>
-        <div id="left-nav-drawer" class="left-nav-drawer" role="dialog" aria-label="Mobile Navigation Menu">
-            <div class="drawer-header">
-                <div class="drawer-brand">
-                    <img src="images/ccic-logo.png" alt="CCIC Logo" class="drawer-logo">
-                    <div class="drawer-brand-text">
-                        <span class="drawer-title">CCIC</span>
-                        <span class="drawer-subtitle">Department of CSE (AI &amp; ML)</span>
+                <!-- Collapsible Dropdown Navigation Menu -->
+                <div id="mobile-dropdown-menu" class="mobile-dropdown-collapse" style="display: none;">
+                    <div class="mobile-dropdown-search">
+                        <form class="mobile-search-form" onsubmit="return false;">
+                            <i class="fa fa-search"></i>
+                            <input type="search" placeholder="Search CCIC..." aria-label="Search">
+                        </form>
+                    </div>
+                    <ul class="mobile-dropdown-nav">
+                        <li class=""><a href="index.html"><i class="fa fa-home"></i> <span>HOME</span></a></li>
+                        <li class=""><a href="about.html"><i class="fa fa-info-circle"></i> <span>ABOUT</span></a></li>
+                        <li class=""><a href="scope-members.html"><i class="fa fa-users"></i> <span>SCOPE MEMBERS</span></a></li>
+                        <li class=""><a href="magic-members.html"><i class="fa fa-magic"></i> <span>MAGIC MEMBERS</span></a></li>
+                        <li class=""><a href="events.html"><i class="fa fa-calendar"></i> <span>ACTIVITIES &amp; EVENTS</span></a></li>
+                        <li class=""><a href="achievements.html"><i class="fa fa-trophy"></i> <span>ACHIEVEMENTS</span></a></li>
+                        <li class="active current-menu-item"><a href="gallery.html"><i class="fa fa-camera"></i> <span>GALLERY</span></a></li>
+                        <li class=""><a href="contact.html"><i class="fa fa-envelope"></i> <span>CONTACT US</span></a></li>
+                    </ul>
+                    <div class="mobile-dropdown-footer">
+                        <div class="mobile-dropdown-social">
+                            <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="social-icon-btn insta" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon-btn linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <p class="mobile-dropdown-affiliation">Department of CSE (AI &amp; ML) &bull; Sri Sairam Engineering College</p>
                     </div>
                 </div>
-                <button id="close-drawer-btn" class="close-drawer-btn" aria-label="Close menu">&times;</button>
-            </div>
-            <div class="drawer-search">
-                <form class="drawer-search-form" onsubmit="return false;">
-                    <i class="fa fa-search"></i>
-                    <input type="search" placeholder="Search CCIC..." aria-label="Search">
-                </form>
-            </div>
-            <nav class="drawer-nav">
-                <ul>
-                    <li class=""><a href="index.html"><i class="fa fa-home"></i> <span>HOME</span></a></li>
-                    <li class=""><a href="about.html"><i class="fa fa-info-circle"></i> <span>ABOUT</span></a></li>
-                    <li class=""><a href="scope-members.html"><i class="fa fa-users"></i> <span>SCOPE MEMBERS</span></a></li>
-                    <li class=""><a href="magic-members.html"><i class="fa fa-magic"></i> <span>MAGIC MEMBERS</span></a></li>
-                    <li class=""><a href="events.html"><i class="fa fa-calendar"></i> <span>ACTIVITIES & EVENTS</span></a></li>
-                    <li class=""><a href="achievements.html"><i class="fa fa-trophy"></i> <span>ACHIEVEMENTS</span></a></li>
-                    <li class="active current-menu-item"><a href="gallery.html"><i class="fa fa-camera"></i> <span>GALLERY</span></a></li>
-                    <li class=""><a href="contact.html"><i class="fa fa-envelope"></i> <span>CONTACT US</span></a></li>
-                </ul>
-            </nav>
-            <div class="drawer-footer">
-                <div class="drawer-social">
-                    <a href="https://www.instagram.com/ccic_sairam?stkn=MXB2OGdiOTJsNTY3Yw==" target="_blank" class="social-icon-btn insta" title="Instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/ccic-club-837993428?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon-btn linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <p class="drawer-affiliation">Sri Sairam Engineering College</p>
             </div>
         </div>
     </header>

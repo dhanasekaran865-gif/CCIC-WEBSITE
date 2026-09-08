@@ -1,37 +1,52 @@
 // CCIC Website Interactive Scripts
 $(document).ready(function() {
-  // Left-Side Navigation Drawer Controls
-  function openLeftDrawer() {
-    $('#left-nav-drawer').addClass('open');
-    $('#left-drawer-backdrop').addClass('open');
-    $('body').addClass('drawer-open');
+  // Mobile Dropdown Navigation Menu Controls
+  function toggleMobileDropdown() {
+    var $menu = $('#mobile-dropdown-menu');
+    var $btn = $('#mobile-menu-btn');
+    var isVisible = $menu.is(':visible');
+
+    if (isVisible) {
+      $menu.stop(true, true).slideUp(220);
+      $btn.removeClass('open').attr('aria-expanded', 'false');
+    } else {
+      $menu.stop(true, true).slideDown(220);
+      $btn.addClass('open').attr('aria-expanded', 'true');
+    }
   }
 
-  function closeLeftDrawer() {
-    $('#left-nav-drawer').removeClass('open');
-    $('#left-drawer-backdrop').removeClass('open');
-    $('body').removeClass('drawer-open');
+  function closeMobileDropdown() {
+    var $menu = $('#mobile-dropdown-menu');
+    var $btn = $('#mobile-menu-btn');
+    if ($menu.is(':visible')) {
+      $menu.stop(true, true).slideUp(200);
+      $btn.removeClass('open').attr('aria-expanded', 'false');
+    }
   }
 
-  $(document).on('click', '#mobile-menu-btn, .mobile-menu-btn-left, .open-left-drawer', function(e) {
+  $(document).on('click', '#mobile-menu-btn, .mobile-menu-btn-left', function(e) {
     e.preventDefault();
-    openLeftDrawer();
+    e.stopPropagation();
+    toggleMobileDropdown();
   });
 
-  $(document).on('click', '#close-drawer-btn, #left-drawer-backdrop', function(e) {
-    e.preventDefault();
-    closeLeftDrawer();
-  });
-
-  $(document).on('keydown', function(e) {
-    if (e.key === 'Escape' || e.keyCode === 27) {
-      closeLeftDrawer();
+  // Close dropdown when clicking outside of mobile menu bar
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('#mobile-menu-bar').length) {
+      closeMobileDropdown();
     }
   });
 
-  // Close drawer when clicking any link inside it
-  $('#left-nav-drawer a').on('click', function() {
-    closeLeftDrawer();
+  // Close dropdown on Escape key
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      closeMobileDropdown();
+    }
+  });
+
+  // Close dropdown when clicking any navigation link inside it
+  $(document).on('click', '#mobile-dropdown-menu .mobile-dropdown-nav a', function() {
+    closeMobileDropdown();
   });
 
   // Smooth scroll to top
