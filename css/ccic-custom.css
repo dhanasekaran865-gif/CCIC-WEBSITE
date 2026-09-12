@@ -1059,31 +1059,15 @@ footer#colophon {
   background-repeat: no-repeat;
   background-position: 100% center;
   border-top: 1px solid #e5e7eb;
-  padding: 40px 0 25px 0;
+  padding: 28px 0 24px 0;
   margin-top: 60px;
   color: #555555;
 }
 
-#menu-footer-navigation {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px 25px;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 15px;
-}
-
-#menu-footer-navigation li a {
-  color: #444444;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-#menu-footer-navigation li a:hover {
-  color: var(--sairam-blue);
-  text-decoration: underline;
+#menu-footer-navigation,
+footer#colophon #menu-footer-navigation,
+ul#menu-footer-navigation {
+  display: none !important;
 }
 
 .footer-copyright-text {
