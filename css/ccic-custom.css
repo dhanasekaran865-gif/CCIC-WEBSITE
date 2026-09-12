@@ -1083,31 +1083,71 @@ footer#colophon {
   color: #333333;
 }
 
-#social-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 12px;
-  margin-top: 10px;
+#social-links,
+footer#colophon #social-links {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+  margin-top: 10px !important;
 }
 
-#social-links a {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #f1f5f9;
-  color: var(--sairam-blue);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  transition: all 0.25s;
+#social-links a,
+footer#colophon #social-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  margin-left: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.2s ease !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
 }
 
-#social-links a:hover {
-  background: var(--sairam-blue);
-  color: #ffffff;
-  transform: translateY(-2px);
+#social-links a:hover,
+footer#colophon #social-links a:hover {
+  transform: translateY(-3px) scale(1.06) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  opacity: 0.95 !important;
+}
+
+#social-links a i,
+footer#colophon #social-links a i {
+  font-size: 18px !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+#social-links a.footer-social-linkedin,
+footer#colophon #social-links a.footer-social-linkedin,
+footer#colophon #social-links a.footer-linkedin {
+  background: #0077b5 !important;
+}
+
+#social-links a.footer-social-instagram,
+footer#colophon #social-links a.footer-social-instagram,
+footer#colophon #social-links a.footer-insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+}
+
+#social-links a.footer-social-portal,
+footer#colophon #social-links a.footer-social-portal,
+footer#colophon #social-links a.footer-portal {
+  background: #003366 !important;
 }
 
 /* Back to top */
@@ -1323,9 +1363,11 @@ footer#colophon {
     height: 200px;
   }
 
-  #social-links {
+  #social-links,
+  footer#colophon #social-links {
+    display: inline-flex !important;
     justify-content: center !important;
-    margin-top: 15px;
+    margin-top: 15px !important;
   }
 
   .footer-copyright-text {
