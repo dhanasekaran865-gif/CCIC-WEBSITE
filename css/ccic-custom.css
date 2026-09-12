@@ -847,10 +847,15 @@ header#header {
   padding-top: 14px;
 }
 
-.btn-ccic {
+.btn-ccic,
+#page a.btn-ccic,
+#page .btn-ccic,
+a.btn-ccic,
+.hero-overlay-card .btn-ccic,
+#page .hero-overlay-card a.btn-ccic {
   display: inline-block;
   padding: 8px 18px;
-  background-color: var(--sairam-accent);
+  background-color: var(--sairam-accent) !important;
   color: #ffffff !important;
   font-size: 13px;
   font-weight: 700;
@@ -860,11 +865,19 @@ header#header {
   border: none;
   cursor: pointer;
   transition: all 0.25s ease;
+  text-decoration: none !important;
 }
 
-.btn-ccic:hover {
-  background-color: var(--sairam-dark-blue);
+.btn-ccic:hover,
+#page a.btn-ccic:hover,
+#page .btn-ccic:hover,
+a.btn-ccic:hover,
+.hero-overlay-card .btn-ccic:hover,
+#page .hero-overlay-card a.btn-ccic:hover {
+  background-color: var(--sairam-dark-blue) !important;
+  color: #ffffff !important;
   box-shadow: 0 4px 10px rgba(3, 58, 135, 0.3);
+  text-decoration: none !important;
 }
 
 .btn-ccic-outline {
