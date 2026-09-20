@@ -75,26 +75,40 @@ header#header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
+header#header #logo-search,
 #logo-search {
-  padding: 12px 0 10px 0;
+  height: auto !important;
+  min-height: 106px;
+  padding: 12px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
+}
+
+#logo-search > div:first-child {
+  flex: 0 1 auto;
+}
+
+#logo-search > div:last-child {
+  flex: 0 0 auto;
 }
 
 .brand-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 16px;
   text-decoration: none;
+  flex-wrap: nowrap;
 }
 
 .brand-ccic-logo {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
+  min-width: 80px;
   object-fit: contain;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.16);
   background: #fff;
   transition: transform 0.3s ease;
 }
@@ -107,10 +121,11 @@ header#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .brand-title {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 800;
   color: var(--sairam-blue);
   line-height: 1.1;
@@ -119,10 +134,11 @@ header#header {
 }
 
 .brand-subtitle {
-  font-size: 12px;
-  color: #444;
+  font-size: 13px;
+  color: #333;
   font-weight: 600;
   margin-top: 3px;
+  letter-spacing: 0.2px;
 }
 
 .brand-dept-tag {
@@ -130,16 +146,22 @@ header#header {
   color: #026670;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
-  margin-top: 2px;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
 }
 
 .brand-sairam-logo {
-  height: 58px;
+  height: 78px;
+  max-width: 220px;
   object-fit: contain;
-  margin-left: 20px;
-  border-left: 1px solid #ddd;
-  padding-left: 20px;
+  margin-left: 18px;
+  border-left: 1.5px solid #d5dbe1;
+  padding-left: 18px;
+  transition: transform 0.3s ease;
+}
+
+.brand-sairam-logo:hover {
+  transform: scale(1.03);
 }
 
 .header-search-form {
@@ -1201,6 +1223,9 @@ footer#colophon #social-links a.footer-portal {
   #nav li a {
     padding: 12px 10px;
     font-size: 12px;
+  }
+  .brand-text-block {
+    white-space: normal;
   }
   .brand-sairam-logo {
     display: none;
