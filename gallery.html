@@ -177,16 +177,870 @@
                 </div>
             </div>
 
-            <!-- Gallery Grid (Ready for uploads) -->
-            <div class="gallery-grid" id="galleryGrid" style="min-height: 280px; display: flex; justify-content: center; align-items: center; width: 100%;">
-                <div class="col-xs-12 text-center" style="padding: 65px 20px;">
-                    <div style="width: 84px; height: 84px; margin: 0 auto 20px auto; background: #f1f5f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px dashed #cbd5e1;">
-                        <i class="fa fa-camera" style="font-size: 34px; color: #94a3b8;"></i>
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-filter-wrap">
+                <div class="gallery-filter-bar">
+                    <button type="button" class="gallery-filter-btn active" data-filter="all">
+                        <i class="fa fa-th-large"></i> All Photos <span class="badge">40</span>
+                    </button>
+                    <button type="button" class="gallery-filter-btn" data-filter="inauguration">
+                        <i class="fa fa-flag"></i> Club Inauguration <span class="badge">20</span>
+                    </button>
+                    <button type="button" class="gallery-filter-btn" data-filter="bootcamp">
+                        <i class="fa fa-cogs"></i> Agentic AI Bootcamp <span class="badge">20</span>
+                    </button>
+                    <button type="button" class="gallery-filter-btn" data-filter="hands-on">
+                        <i class="fa fa-laptop"></i> Hands-on Lab <span class="badge">10</span>
+                    </button>
+                    <button type="button" class="gallery-filter-btn" data-filter="dignitaries">
+                        <i class="fa fa-user-circle"></i> Dignitaries &amp; Dias <span class="badge">14</span>
+                    </button>
+                    <button type="button" class="gallery-filter-btn" data-filter="team">
+                        <i class="fa fa-users"></i> Team &amp; Coordinators <span class="badge">12</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery Card: Auspicious Lamp Lighting Ceremony -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Auspicious lighting of the Kuthu Vilakku by college dignitaries and Scope Members, symbolizing enlightenment, knowledge, and innovation at CCIC.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-01-lamp-lighting-tradition.jpg" alt="Auspicious Lamp Lighting Ceremony" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Inauguration</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Auspicious Lamp Lighting Ceremony</h4>
+                            <p class="gallery-card-desc">Auspicious lighting of the Kuthu Vilakku by college dignitaries and Scope Members, symbolizing enlightenment, knowledge, and innovation at CCIC.</p>
+                        </div>
                     </div>
-                    <h3 style="font-size: 20px; font-weight: 700; color: #003366; margin-bottom: 8px;">Gallery Updating Soon</h3>
-                    <p style="font-size: 14px; color: #64748b; max-width: 480px; margin: 0 auto;">
-                        Photographs from our upcoming bootcamps, workshops, and exhibitions will be curated and displayed here shortly.
-                    </p>
+                </div>
+
+                <!-- Gallery Card: Felicitation of Chief Guest Mr. Mohammed Al Fayas D -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp dignitaries">
+                    <div class="gallery-card" data-description="Faculty Scope Members and HOD Dr. B. Geetha felicitating Chief Guest Mr. Mohammed Al Fayas D (Founder, G-Tech AI) with traditional honors.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-01-chief-guest-felicitation.jpg" alt="Felicitation of Chief Guest Mr. Mohammed Al Fayas D" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Felicitation</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Felicitation of Chief Guest Mr. Mohammed Al Fayas D</h4>
+                            <p class="gallery-card-desc">Faculty Scope Members and HOD Dr. B. Geetha felicitating Chief Guest Mr. Mohammed Al Fayas D (Founder, G-Tech AI) with traditional honors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Lamp Lighting by Faculty Scope Members -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Department faculty and Scope Members performing the ceremonial lighting of the lamp to officially inaugurate the club.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-02-lamp-lighting-scope-members.jpg" alt="Lamp Lighting by Faculty Scope Members" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Inauguration</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Lamp Lighting by Faculty Scope Members</h4>
+                            <p class="gallery-card-desc">Department faculty and Scope Members performing the ceremonial lighting of the lamp to officially inaugurate the club.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Scope Members &amp; Guest on Stage -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp dignitaries">
+                    <div class="gallery-card" data-description="Faculty Scope Members Ms. S. Gayathri, Ms. K. Subhasri, and Ms. M. Anitha joining the Chief Guest on the dais at Beta Hall.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-02-scope-members-stage.jpg" alt="Scope Members &amp; Guest on Stage" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Dignitaries</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Scope Members &amp; Guest on Stage</h4>
+                            <p class="gallery-card-desc">Faculty Scope Members Ms. S. Gayathri, Ms. K. Subhasri, and Ms. M. Anitha joining the Chief Guest on the dais at Beta Hall.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Dignitaries &amp; Dias Opening Ceremony -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Dignitaries seated on the dias at Tesla Hall during the welcome address and opening ceremony of CCIC.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-03-dias-presidential-welcome.jpg" alt="Dignitaries &amp; Dias Opening Ceremony" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Inauguration</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Dignitaries &amp; Dias Opening Ceremony</h4>
+                            <p class="gallery-card-desc">Dignitaries seated on the dias at Tesla Hall during the welcome address and opening ceremony of CCIC.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Memento Presentation to Chief Guest -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp dignitaries">
+                    <div class="gallery-card" data-description="Presenting the official CCIC memento to Chief Guest Mr. Mohammed Al Fayas D in recognition of his technical mentorship.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-03-memento-presentation.jpg" alt="Memento Presentation to Chief Guest" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Memento</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Memento Presentation to Chief Guest</h4>
+                            <p class="gallery-card-desc">Presenting the official CCIC memento to Chief Guest Mr. Mohammed Al Fayas D in recognition of his technical mentorship.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Welcome Address by Chief Guest Mr. Thirumurugan R -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Chief Guest Mr. Thirumurugan R (AI &amp; ML Engineer, Full Stack Developer, Co-Founder @ Social Eagle) taking the podium at Sairam Engineering College.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-04-chief-guest-welcome.jpg" alt="Welcome Address by Chief Guest Mr. Thirumurugan R" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Chief Guest</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Welcome Address by Chief Guest Mr. Thirumurugan R</h4>
+                            <p class="gallery-card-desc">Chief Guest Mr. Thirumurugan R (AI &amp; ML Engineer, Full Stack Developer, Co-Founder @ Social Eagle) taking the podium at Sairam Engineering College.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Bootcamp Launch Ceremony -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp dignitaries">
+                    <div class="gallery-card" data-description="Official commencement of the hands-on Bootcamp on &#x27;Content Creation Automation Using Agents&#x27; hosted by CCIC.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-04-bootcamp-inaugural-ceremony.jpg" alt="Bootcamp Launch Ceremony" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Bootcamp Launch</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Bootcamp Launch Ceremony</h4>
+                            <p class="gallery-card-desc">Official commencement of the hands-on Bootcamp on &#x27;Content Creation Automation Using Agents&#x27; hosted by CCIC.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Inaugural Keynote on Cognitive Intelligence -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Chief Guest addressing the students on emerging trends in artificial intelligence, cognitive architectures, and real-world software engineering.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-05-chief-guest-keynote-opening.jpg" alt="Inaugural Keynote on Cognitive Intelligence" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Keynote</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Inaugural Keynote on Cognitive Intelligence</h4>
+                            <p class="gallery-card-desc">Chief Guest addressing the students on emerging trends in artificial intelligence, cognitive architectures, and real-world software engineering.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Inaugural Address by Student Leads -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp team">
+                    <div class="gallery-card" data-description="Student Coordinators S J Anis Fatima and Guru Prakash introducing the agenda, learning outcomes, and schedule for the day.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-05-welcome-address-podium.jpg" alt="Inaugural Address by Student Leads" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Opening Address</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Inaugural Address by Student Leads</h4>
+                            <p class="gallery-card-desc">Student Coordinators S J Anis Fatima and Guru Prakash introducing the agenda, learning outcomes, and schedule for the day.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Unveiling the CCIC Vision &amp; Roadmap -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Presentation of the club roadmap, outlining planned hackathons, student projects, and cognitive computing workshops for the academic year.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-06-presentation-cognitive-roadmap.jpg" alt="Unveiling the CCIC Vision &amp; Roadmap" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Club Vision</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Unveiling the CCIC Vision &amp; Roadmap</h4>
+                            <p class="gallery-card-desc">Presentation of the club roadmap, outlining planned hackathons, student projects, and cognitive computing workshops for the academic year.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Keynote: Multi-Agent Systems &amp; LLMs -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp">
+                    <div class="gallery-card" data-description="Mr. Mohammed Al Fayas D delivering the keynote lecture on autonomous agents, function calling, and multi-agent collaborative systems.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-06-keynote-ai-agents.jpg" alt="Keynote: Multi-Agent Systems &amp; LLMs" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Keynote Lecture</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Keynote: Multi-Agent Systems &amp; LLMs</h4>
+                            <p class="gallery-card-desc">Mr. Mohammed Al Fayas D delivering the keynote lecture on autonomous agents, function calling, and multi-agent collaborative systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Tech Talk: Building Scalable AI Solutions -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Interactive keynote session breaking down modern SaaS paradigms, rapid prototyping, and the shift toward autonomous AI agents.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-07-tech-talk-saas-innovation.jpg" alt="Tech Talk: Building Scalable AI Solutions" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Tech Talk</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Tech Talk: Building Scalable AI Solutions</h4>
+                            <p class="gallery-card-desc">Interactive keynote session breaking down modern SaaS paradigms, rapid prototyping, and the shift toward autonomous AI agents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Agentic Architecture for Content Automation -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp">
+                    <div class="gallery-card" data-description="Breaking down the step-by-step pipeline for automating multimedia content generation using specialized LLM agents.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-07-content-automation-architecture.jpg" alt="Agentic Architecture for Content Automation" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Architecture</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Agentic Architecture for Content Automation</h4>
+                            <p class="gallery-card-desc">Breaking down the step-by-step pipeline for automating multimedia content generation using specialized LLM agents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Official CCIC Banner &amp; Induction Stage -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Tesla Hall stage displaying the official CCIC Inauguration banner alongside college leadership Dr. Sai Prakash Leo Muthu and Campus Principals.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-08-stage-banner-induction.jpg" alt="Official CCIC Banner &amp; Induction Stage" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Inauguration</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Official CCIC Banner &amp; Induction Stage</h4>
+                            <p class="gallery-card-desc">Tesla Hall stage displaying the official CCIC Inauguration banner alongside college leadership Dr. Sai Prakash Leo Muthu and Campus Principals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Interactive Lecture &amp; Concept Demonstration -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp">
+                    <div class="gallery-card" data-description="Students engaged in discussions on prompt design, token optimization, and chaining reasoning steps for autonomous agents.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-08-interactive-lecture-hall.jpg" alt="Interactive Lecture &amp; Concept Demonstration" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Lecture</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Interactive Lecture &amp; Concept Demonstration</h4>
+                            <p class="gallery-card-desc">Students engaged in discussions on prompt design, token optimization, and chaining reasoning steps for autonomous agents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Masterclass on MicroSaaS &amp; AI Startups -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Chief Guest Mr. Thirumurugan R explaining the MicroSaaS business model, lean developer teams, and AI monetization pathways to students.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-09-microsaas-presentation.jpg" alt="Masterclass on MicroSaaS &amp; AI Startups" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Keynote</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Masterclass on MicroSaaS &amp; AI Startups</h4>
+                            <p class="gallery-card-desc">Chief Guest Mr. Thirumurugan R explaining the MicroSaaS business model, lean developer teams, and AI monetization pathways to students.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Hands-on Coding Lab Session Begins -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Participants opening up their developer environments and laptops to build custom agent tools and test live API endpoints.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-09-hands-on-coding-begins.jpg" alt="Hands-on Coding Lab Session Begins" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Hands-on Lab</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block Lab</span>
+                            </div>
+                            <h4 class="gallery-card-title">Hands-on Coding Lab Session Begins</h4>
+                            <p class="gallery-card-desc">Participants opening up their developer environments and laptops to build custom agent tools and test live API endpoints.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Deep-Dive into AI Product Development -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Analyzing traditional SaaS versus lean AI MicroSaaS architectures on the main auditorium projection screen.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-10-microsaas-deep-dive.jpg" alt="Deep-Dive into AI Product Development" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Tech Talk</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Deep-Dive into AI Product Development</h4>
+                            <p class="gallery-card-desc">Analyzing traditional SaaS versus lean AI MicroSaaS architectures on the main auditorium projection screen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Live Agent Coding on the Big Screen -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Step-by-step walkthrough projected on the auditorium screen showing IDE setup, API credentials, and workflow execution.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-10-live-demo-projection.jpg" alt="Live Agent Coding on the Big Screen" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Live Demo</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block Lab</span>
+                            </div>
+                            <h4 class="gallery-card-title">Live Agent Coding on the Big Screen</h4>
+                            <p class="gallery-card-desc">Step-by-step walkthrough projected on the auditorium screen showing IDE setup, API credentials, and workflow execution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Audience Interaction &amp; Q&amp;A Session -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration">
+                    <div class="gallery-card" data-description="Engaging Q&amp;A session where students interacted with the Chief Guest regarding career opportunities and agentic AI project ideas.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-11-student-interaction-qa.jpg" alt="Audience Interaction &amp; Q&amp;A Session" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Interactive Q&amp;A</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Audience Interaction &amp; Q&amp;A Session</h4>
+                            <p class="gallery-card-desc">Engaging Q&amp;A session where students interacted with the Chief Guest regarding career opportunities and agentic AI project ideas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Full Hall Overview: Hands-on Lab in Action -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Geotagged perspective of the vibrant hands-on developer session packed with enthusiastic student engineers at the IT Block.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-11-full-lab-hall-overview.jpg" alt="Full Hall Overview: Hands-on Lab in Action" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Full Lab</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block, Sai Leo Nagar</span>
+                            </div>
+                            <h4 class="gallery-card-title">Full Hall Overview: Hands-on Lab in Action</h4>
+                            <p class="gallery-card-desc">Geotagged perspective of the vibrant hands-on developer session packed with enthusiastic student engineers at the IT Block.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Student Coordinator Address: Guru Prakash -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="Student Coordinator Guru Prakash outlining the student chapter objectives, peer mentorship initiatives, and event plans.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-12-coordinator-speech-guru.jpg" alt="Student Coordinator Address: Guru Prakash" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Coordinator</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Student Coordinator Address: Guru Prakash</h4>
+                            <p class="gallery-card-desc">Student Coordinator Guru Prakash outlining the student chapter objectives, peer mentorship initiatives, and event plans.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Students Building Autonomous Workflows -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Teams of students programming prompt chains, configuring webhook triggers, and testing agent responses.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-12-students-programming.jpg" alt="Students Building Autonomous Workflows" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Lab Coding</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">Students Building Autonomous Workflows</h4>
+                            <p class="gallery-card-desc">Teams of students programming prompt chains, configuring webhook triggers, and testing agent responses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Student Leader Address: Dhanasekaran -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="Coordinator Dhanasekaran addressing the student assembly on upcoming workshops and collaborative open-source AI projects.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-13-student-coordinator-address.jpg" alt="Student Leader Address: Dhanasekaran" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Coordinator</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Student Leader Address: Dhanasekaran</h4>
+                            <p class="gallery-card-desc">Coordinator Dhanasekaran addressing the student assembly on upcoming workshops and collaborative open-source AI projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Collaborative Peer Problem Solving -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on team">
+                    <div class="gallery-card" data-description="Peer learning and collaborative debugging in action as students work in pairs to deploy AI agents.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-13-peer-collaboration.jpg" alt="Collaborative Peer Problem Solving" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Peer Coding</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">Collaborative Peer Problem Solving</h4>
+                            <p class="gallery-card-desc">Peer learning and collaborative debugging in action as students work in pairs to deploy AI agents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Scope Members &amp; Faculty Felicitation -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Honoring the faculty Scope Members and mentors guiding the Computational and Cognitive Intelligence Club across engineering disciplines.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-14-scope-faculty-felicitation.jpg" alt="Scope Members &amp; Faculty Felicitation" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Scope Members</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Scope Members &amp; Faculty Felicitation</h4>
+                            <p class="gallery-card-desc">Honoring the faculty Scope Members and mentors guiding the Computational and Cognitive Intelligence Club across engineering disciplines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Antigravity IDE &amp; Gemini API Walkthrough -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Demonstration of advanced developer tooling, Antigravity IDE setup, and configuring Google Gemini API keys for agent workflows.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-14-antigravity-ide-demo.jpg" alt="Antigravity IDE &amp; Gemini API Walkthrough" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Tech Stack</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">Antigravity IDE &amp; Gemini API Walkthrough</h4>
+                            <p class="gallery-card-desc">Demonstration of advanced developer tooling, Antigravity IDE setup, and configuring Google Gemini API keys for agent workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Magic Members Badge Induction Ceremony -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="Induction of the dedicated 2nd and 3rd year student Magic Members, conferring designations across technical and event domains.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-15-magic-members-induction.jpg" alt="Magic Members Badge Induction Ceremony" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Magic Members</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Magic Members Badge Induction Ceremony</h4>
+                            <p class="gallery-card-desc">Induction of the dedicated 2nd and 3rd year student Magic Members, conferring designations across technical and event domains.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Interactive Multi-Agent Coding Lab -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Auditorium-wide interactive session where students executed automated content pipelines and verified output formats.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-15-auditorium-interactive-coding.jpg" alt="Interactive Multi-Agent Coding Lab" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Hands-on Lab</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">Interactive Multi-Agent Coding Lab</h4>
+                            <p class="gallery-card-desc">Auditorium-wide interactive session where students executed automated content pipelines and verified output formats.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Memento Presentation &amp; Honors on Dias -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration dignitaries">
+                    <div class="gallery-card" data-description="Presenting mementos of gratitude and appreciation to dignitaries and guest speakers during the ceremony.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-16-dias-felicitation-ceremony.jpg" alt="Memento Presentation &amp; Honors on Dias" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Dignitaries</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Memento Presentation &amp; Honors on Dias</h4>
+                            <p class="gallery-card-desc">Presenting mementos of gratitude and appreciation to dignitaries and guest speakers during the ceremony.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Intensive Developer Sprint -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Focused engineering session as student developers implement custom prompts and autonomous function calling scripts.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-16-student-developer-focus.jpg" alt="Intensive Developer Sprint" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Dev Sprint</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Intensive Developer Sprint</h4>
+                            <p class="gallery-card-desc">Focused engineering session as student developers implement custom prompts and autonomous function calling scripts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Auditorium Assembly &amp; Core Team -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="A packed Tesla Hall featuring faculty Scope Members, Magic Members, and hundreds of enthusiastic students from CSE (AI &amp; ML).">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-17-full-house-auditorium-moment.jpg" alt="Auditorium Assembly &amp; Core Team" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Grand Assembly</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Auditorium Assembly &amp; Core Team</h4>
+                            <p class="gallery-card-desc">A packed Tesla Hall featuring faculty Scope Members, Magic Members, and hundreds of enthusiastic students from CSE (AI &amp; ML).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: One-on-One Mentorship &amp; Code Review -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on team">
+                    <div class="gallery-card" data-description="Chief Guest and coordinators reviewing student agent scripts, offering real-time debugging tips and architectural advice.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-17-mentor-guidance.jpg" alt="One-on-One Mentorship &amp; Code Review" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Mentorship</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">One-on-One Mentorship &amp; Code Review</h4>
+                            <p class="gallery-card-desc">Chief Guest and coordinators reviewing student agent scripts, offering real-time debugging tips and architectural advice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Enthusiastic Student Delegate Gathering -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="Student delegates, volunteers, and club members celebrating the successful inaugural launch of CCIC.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-18-student-team-cheers.jpg" alt="Enthusiastic Student Delegate Gathering" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Student Delegates</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Enthusiastic Student Delegate Gathering</h4>
+                            <p class="gallery-card-desc">Student delegates, volunteers, and club members celebrating the successful inaugural launch of CCIC.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Student Agent Project Demos -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp hands-on">
+                    <div class="gallery-card" data-description="Participants presenting their automated content agents, demonstrating automated summary generators and social media pipelines.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-18-student-project-showcase.jpg" alt="Student Agent Project Demos" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Project Demos</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> IT Block</span>
+                            </div>
+                            <h4 class="gallery-card-title">Student Agent Project Demos</h4>
+                            <p class="gallery-card-desc">Participants presenting their automated content agents, demonstrating automated summary generators and social media pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Official CCIC Inaugural Team Photograph -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team dignitaries">
+                    <div class="gallery-card" data-description="Commemorative group photograph of CCIC faculty Scope Members, Student Coordinators, and Magic Members on the Tesla Hall stage.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-19-official-team-photo.jpg" alt="Official CCIC Inaugural Team Photograph" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Official Group Photo</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Official CCIC Inaugural Team Photograph</h4>
+                            <p class="gallery-card-desc">Commemorative group photograph of CCIC faculty Scope Members, Student Coordinators, and Magic Members on the Tesla Hall stage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Bootcamp Reflection &amp; Outcomes Review -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp team">
+                    <div class="gallery-card" data-description="Club coordinators summarizing the key engineering achievements and takeaways from the day&#x27;s agentic development sprint.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-19-coordinator-wrap-up.jpg" alt="Bootcamp Reflection &amp; Outcomes Review" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Review</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Bootcamp Reflection &amp; Outcomes Review</h4>
+                            <p class="gallery-card-desc">Club coordinators summarizing the key engineering achievements and takeaways from the day&#x27;s agentic development sprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Inauguration Valedictory &amp; Celebration -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="inauguration team">
+                    <div class="gallery-card" data-description="Club coordinators, student leads, and members celebrating the landmark establishment of CCIC at Sri Sairam Engineering College.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/inauguration/inauguration-20-celebration-valedictory.jpg" alt="Inauguration Valedictory &amp; Celebration" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(16, 185, 129, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Valedictory</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 8th May 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Tesla Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Inauguration Valedictory &amp; Celebration</h4>
+                            <p class="gallery-card-desc">Club coordinators, student leads, and members celebrating the landmark establishment of CCIC at Sri Sairam Engineering College.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card: Bootcamp Valedictory &amp; Group Gathering -->
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 gallery-item-col" data-category="bootcamp team dignitaries">
+                    <div class="gallery-card" data-description="Closing commemorative photo featuring Chief Guest Mr. Mohammed Al Fayas D, faculty mentors, student coordinators, and bootcamp participants.">
+                        <div class="gallery-img-container">
+                            <img src="images/gallery/bootcamp/bootcamp-20-valedictory-group-photo.jpg" alt="Bootcamp Valedictory &amp; Group Gathering" loading="lazy">
+                            <span class="gallery-badge" style="background: rgba(14, 116, 144, 0.9); color: #ffffff; border: 1px solid rgba(255,255,255,0.3);">Valedictory Group</span>
+                            <div class="gallery-overlay-icon">
+                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body">
+                            <div class="gallery-meta">
+                                <span class="date"><i class="fa fa-calendar"></i> 11th August 2026</span>
+                                <span class="venue"><i class="fa fa-map-marker"></i> Beta Hall</span>
+                            </div>
+                            <h4 class="gallery-card-title">Bootcamp Valedictory &amp; Group Gathering</h4>
+                            <p class="gallery-card-desc">Closing commemorative photo featuring Chief Guest Mr. Mohammed Al Fayas D, faculty mentors, student coordinators, and bootcamp participants.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

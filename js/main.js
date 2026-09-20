@@ -90,13 +90,16 @@ $(document).ready(function() {
   $('.gallery-filter-btn').on('click', function() {
     $('.gallery-filter-btn').removeClass('active');
     $(this).addClass('active');
-    var filter = $(this).data('filter');
+    var filter = $(this).attr('data-filter') || $(this).data('filter');
     
-    if (filter === 'all') {
+    if (filter === 'all' || filter === '*') {
       $('.gallery-item-col').fadeIn(250);
     } else {
       $('.gallery-item-col').hide();
-      $('.gallery-item-col[data-category="' + filter + '"]').fadeIn(250);
+      $('.gallery-item-col').filter(function() {
+        var cats = ($(this).attr('data-category') || '').trim().split(/\s+/);
+        return cats.indexOf(filter) !== -1;
+      }).fadeIn(250);
     }
   });
 
@@ -105,7 +108,7 @@ $(document).ready(function() {
     var imgSrc = $(this).find('img').attr('src');
     var title = $(this).find('.gallery-card-title').text();
     var badge = $(this).find('.gallery-badge').text();
-    var desc = $(this).attr('data-description') || '';
+    var desc = $(this).attr('data-description') || $(this).find('.gallery-card-desc').text() || '';
     
     $('#galleryModalImg').attr('src', imgSrc);
     $('#galleryModalTitle').text(title);

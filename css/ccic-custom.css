@@ -1522,6 +1522,23 @@ footer#colophon #social-links a.footer-portal {
   box-shadow: 0 3px 10px rgba(0, 51, 102, 0.25);
 }
 
+.gallery-filter-btn .badge {
+  background: #e2e8f0;
+  color: #003366;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 6px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  vertical-align: middle;
+  transition: all 0.25s ease;
+}
+
+.gallery-filter-btn.active .badge {
+  background: #f7b731;
+  color: #002244;
+}
+
 .gallery-grid {
   display: flex;
   flex-wrap: wrap;
